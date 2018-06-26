@@ -67,9 +67,9 @@ print("Function Arguments")
 
 
 
-"""
-Some simple examples of reference issues for lists
-"""
+
+# Some simple examples of reference issues for lists
+
 
 #Part 1 - references to two distinct objects
 	iipp1_instructors = ["Joe", "Scott", "John", "Stephen"]
