@@ -150,3 +150,46 @@
 	#404
 	#123456789
 	#327961000
+
+
+# Practice Exercises for List Manipulation
+
+#Question: Extend a list with another list
+
+	example_list = [2, 3, 5, 7, 11, 13]
+
+	example_list.append(0)
+	print(example_list)
+
+
+	# Output
+	#[2, 3, 5, 7, 11, 13, 0]
+	
+	
+	example_list.extend([0, 0, 0])
+	print(example_list)
+
+
+	# Output
+	#[2, 3, 5, 7, 11, 13, 0, 0, 0]
+	
+	#Concatenate one list onto another
+	new_list = example_list + [0, 0, 0]
+	print(example_list)
+	print(new_list)
+
+
+	# Output
+	#[2, 3, 5, 7, 11, 13]
+	#[2, 3, 5, 7, 11, 13]
+	#[2, 3, 5, 7, 11, 13, 0, 0, 0]
+	
+	
+	#Shuffle the items in a list
+	random.shuffle(example_list)    
+	print(example_list)
+
+
+	# Output - note that order of second list may vary due to randomness
+	#[2, 3, 5, 7, 11, 13]
+	#[11, 2, 7, 5, 13, 3]
