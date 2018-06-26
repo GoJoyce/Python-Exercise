@@ -107,4 +107,55 @@ Practice 1:
 	    remove_by_name(tasks, 'Buy some ties')
 	    printlist(tasks)
 
-	run()
+
+Practice 2: Flatten a nested list
+
+	def flatten(nested_list):
+	    flattened_list = []
+	    for sub_list in nested_list:
+		flattened_list.extend(sub_list)
+	    return flattened_list
+
+	
+	print(flatten([]))
+	print(flatten([[]]))
+	print(flatten([[1, 2, 3]]))
+	print(flatten([["cat", "dog"], ["pig", "cow"]]))
+	print(flatten([[9, 8, 7], [6, 5], [4, 3, 2], [1]]))
+
+
+	# Output
+	#[]
+	#[]
+	#[1, 2, 3]
+	#['cat', 'dog', 'pig', 'cow']
+	#[9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+
+Practice 3: Remove deplicates from a list while preserving the order of items
+
+	myList = [1, 2, 3, 1, 2, 5, 6, 7, 8]
+	cleanlist = []
+	#cleanlist.append(x) for x in myList if x not in cleanlist
+
+
+	def remove_duplicates(items):
+	    no_duplicates = []
+	    for item in items:
+		if item not in no_duplicates:
+		    no_duplicates.append(item)
+	    return no_duplicates
+
+
+
+	print(remove_duplicates([]))
+	print(remove_duplicates([1, 2, 3, 4]))
+	print(remove_duplicates([1, 2, 2, 3, 3, 3, 4, 5, 6, 6]))
+	print(remove_duplicates(["cat", "dog", "cat", "pig", "cow", "cat", "pig", "pug"]))
+
+
+	# Output
+	#[]
+	#[1, 2, 3, 4]
+	#[1, 2, 3, 4, 5, 6]
+	#['cat', 'dog', 'pig', 'cow', 'pug']
