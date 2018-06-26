@@ -53,13 +53,11 @@
 
 	list1 = [2, 3, 5, 7, 11, 13]
 
-	#Another reference to list1
 	list2 = list1
 
 	print(list1)
 	print(list2)
 
-	#Update the first item in second list to zero
 	list2[0] = 0
 
 	print(list1)
@@ -83,20 +81,15 @@
 
 	list1 = [2, 3, 5, 7, 11, 13]
 
-	# Make a copy of list1
 	list2 = list(list1)
 
-	# Print out both lists
 	print(list1)
 	print(list2)
 
-	# Update the first item in second list to zero
 	list2[0] = 0
 
-	# Print out both lists
 	print(list1)
 	print(list2)
-
 
 
 	# Answer - list1 and list2 are two references to distinct lists
@@ -108,3 +101,52 @@
 	#[2, 3, 5, 7, 11, 13]
 	#[2, 3, 5, 7, 11, 13]
 	#[0, 3, 5, 7, 11, 13]
+
+
+
+"""
+#Question 6 - Compute the largest number in a list
+"""
+
+	def list_max(numbers):
+	    maximum = numbers[0]
+	    for number in numbers[1 :]:
+		if number > maximum:
+		    maximum = number
+	    return maximum
+
+	print(list_max([4]))
+	print(list_max([-3, 4]))
+	print(list_max([5, 3, 1, 7, -3, -4]))
+	print(list_max([1, 2, 3, 4, 5]))
+
+
+	# Output
+	#4
+	#4
+	#7
+	#5
+
+
+
+"""
+#Question 7 - Take a list of integers and concatenate their digits
+"""
+
+	def concatenate_ints(int_list):
+	    digits = ""
+	    for number in int_list:
+		digits += str(number)
+	    return int(digits)
+
+	print(concatenate_ints([4]))
+	print(concatenate_ints([4, 0, 4]))
+	print(concatenate_ints([123, 456, 789]))
+	print(concatenate_ints([32, 796, 1000]))
+
+
+	# Output
+	#4
+	#404
+	#123456789
+	#327961000
