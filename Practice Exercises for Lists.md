@@ -43,3 +43,68 @@
 	#2
 	#1
 	#1
+
+
+
+"""
+#Question 4 - Analyze an example of a list reference situation
+"""
+
+
+	list1 = [2, 3, 5, 7, 11, 13]
+
+	#Another reference to list1
+	list2 = list1
+
+	print(list1)
+	print(list2)
+
+	#Update the first item in second list to zero
+	list2[0] = 0
+
+	print(list1)
+	print(list2)
+
+
+	#Answer - list1 and list2 are references to the same list
+	#Updating an item in one list mutates the other list
+
+
+	#Output
+	#[2, 3, 5, 7, 11, 13]
+	#[2, 3, 5, 7, 11, 13]
+	#[0, 3, 5, 7, 11, 13]
+	#[0, 3, 5, 7, 11, 13]
+	
+	
+"""
+#Question 5 - Analyze another example of a list reference situation
+"""
+
+	list1 = [2, 3, 5, 7, 11, 13]
+
+	# Make a copy of list1
+	list2 = list(list1)
+
+	# Print out both lists
+	print(list1)
+	print(list2)
+
+	# Update the first item in second list to zero
+	list2[0] = 0
+
+	# Print out both lists
+	print(list1)
+	print(list2)
+
+
+
+	# Answer - list1 and list2 are two references to distinct lists
+	# Updating an item in one list does not affect the second list
+
+
+	# Output
+	#[2, 3, 5, 7, 11, 13]
+	#[2, 3, 5, 7, 11, 13]
+	#[2, 3, 5, 7, 11, 13]
+	#[0, 3, 5, 7, 11, 13]
