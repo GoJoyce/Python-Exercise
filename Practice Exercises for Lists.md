@@ -5,8 +5,8 @@
 	truefalse_list = 8 * [True] + 8 * [False]
 	print(truefalse_list)
 
-#Output
-#[True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False]
+	#Output
+	#[True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False]
 
 
 """
