@@ -20,7 +20,7 @@ print("Look Alikes")
 
 print("")
 print("Aliases")
-print("=======")
+
 
 	lst3 = [1, 5, 9]
 	lst4 = lst3
