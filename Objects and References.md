@@ -3,7 +3,6 @@ List Objects and References.
 """
 
 print("Look Alikes")
-print("===========")
 
 	lst1 = [7, 3, 2]
 	lst2 = [7, 3, 2]
@@ -36,7 +35,6 @@ print("=======")
 
 print("")
 print("Copies")
-print("======")
 
 	lst5 = [8, 9, 4]
 	# This makes a shallow copy
@@ -53,7 +51,6 @@ print("======")
 
 print("")
 print("Function Arguments")
-print("==================")
 
 	def mutate_list(alist):
 			"""
