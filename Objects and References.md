@@ -18,7 +18,6 @@ print("Look Alikes")
 	[7, -8, 2] [7, 3, 2]
 
 
-print("")
 print("Aliases")
 
 
@@ -33,7 +32,7 @@ print("Aliases")
 	[1, 5, 9] [1, 5, 9]
 	[1, 17, 9] [1, 17, 9]
 
-print("")
+
 print("Copies")
 
 	lst5 = [8, 9, 4]
@@ -49,7 +48,6 @@ print("Copies")
 	[8, -2, 4] [8, 9, 4]
 
 
-print("")
 print("Function Arguments")
 
 	def mutate_list(alist):
