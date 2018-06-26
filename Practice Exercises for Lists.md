@@ -17,6 +17,5 @@
 	word_list = quote.split(" ")
 	print(word_list)
 
-
-#Output
-#['Bring', 'me', 'a', 'shrubbery']
+	#Output
+	#['Bring', 'me', 'a', 'shrubbery']
