@@ -193,3 +193,12 @@
 	# Output - note that order of second list may vary due to randomness
 	#[2, 3, 5, 7, 11, 13]
 	#[11, 2, 7, 5, 13, 3]
+
+#Question: Given a list fib=[0,1], write a loop that appends the sum of the last two items in fib to the end of fib. What is the value of the last item in fib after twenty iterations of this loop? 
+
+	fib = [0,1]
+	for i in range(10):
+	    sum = fib[-1] + fib[-2]
+	    fib.append(sum)
+
+	print(fib)
