@@ -5,6 +5,9 @@ In Python, files are opened using the open function:
 
 	# The mode in which to open it (read, text)
 	mode = "rt"
+	r = read
+	t = text
+	b = binary
 
 	# Actually open the file
 	openfile = open(filename, mode)
